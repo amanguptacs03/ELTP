@@ -11,7 +11,22 @@ public class Contact {
 	{
 		
 	}
-
+     public  boolean validate(){
+    	 
+    	 if(this.fname.isEmpty()||this.lname.isEmpty()||this.dob==null){
+    		 new Exception("please enter the complete details");
+    	return false;
+    	 }
+    	 
+    	 Pattern p=Pattern.compile("^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$");
+    	 Matcher m=p.matcher(this.email);
+    	 if(!m.find())
+    	 {
+    		 
+    	 }
+    	 
+    	 return true;
+     }
 	public String getFname() {
 		return fname;
 	}

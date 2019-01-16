@@ -1,6 +1,6 @@
 package com.assign.second;
 
-public class Assign2_4 {
+public class WordReverse {
 	public static String[] wordReverse(String s) {
 		String[] arr = s.split(" ");
 		for (int i = 0; i < arr.length; i++) {

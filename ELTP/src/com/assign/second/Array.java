@@ -73,7 +73,7 @@ public class Array {
 
 		
 		
-	System.out.println(	Great.greatest(10, 11, 12));
+
 		
 		
 		

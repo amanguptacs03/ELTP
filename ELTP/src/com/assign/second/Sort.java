@@ -2,7 +2,7 @@ package com.assign.second;
 
 
 
-public class Assign2_3 {
+public class Sort {
 
 	public static String[] sortString(String s){
 		String[] arr=s.split(" ");

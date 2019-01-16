@@ -1,6 +1,6 @@
 package com.assign.second;
 
-public class Assign2_2 {
+public class Table {
 
 	public static void main(String[] args) {
 		int[][] arr=new int[13][];
