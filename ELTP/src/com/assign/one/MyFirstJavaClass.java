@@ -1,5 +1,7 @@
 package com.assign.one;
 
+import com.assign.one.HailStoneSequence;
+
 /**
  * 
  * @author aman_gupta1
@@ -11,11 +13,9 @@ public class MyFirstJavaClass {
 		
 	//	System.out.println(	Great.greatest(10, 11, 12));
 		
-		for(int i:HailStone.hailstone(3))
-		{
-			System.out.print(i+" ");
-		}
-		
+		int[] arr = HailStoneSequence.hailStone(5);
+		for(int i:arr)
+		System.out.println(arr);
 		/*
 		 * System.out.println("Today is Monday!!"+(9*5));
 		 * System.out.println("Today is Monday!!");

@@ -11,21 +11,57 @@ public class Contact {
 	{
 		
 	}
-     public  boolean validate(){
+     public Contact(String fname, String mname, String lname, String gender, String address, String area, String city,
+			String pin, String state, String country, String tel, String mob, String email, String website, Date dob,
+			Date anniversary) throws Exception {
+		super();
+		
+		this.fname = fname;
+		this.mname = mname;
+		this.lname = lname;
+		this.gender = gender;
+		this.address = address;
+		this.area = area;
+		this.city = city;
+		this.pin = pin;
+		this.state = state;
+		this.country = country;
+		this.tel = tel;
+		this.mob = mob;
+		this.email = email;
+		this.website = website;
+		this.dob = dob;
+		this.anniversary = anniversary;
+		validate();
+	}
+
+	public  boolean validate() throws Exception{
     	 
     	 if(this.fname.isEmpty()||this.lname.isEmpty()||this.dob==null){
-    		 new Exception("please enter the complete details");
-    	return false;
+    		throw new Exception("please enter the complete details");
+    	
     	 }
     	 
     	 Pattern p=Pattern.compile("^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$");
     	 Matcher m=p.matcher(this.email);
     	 if(!m.find())
     	 {
-    		 
+    		 throw new Exception("invalid email");
     	 }
     	 
-    	 return true;
+    	 if(this.tel.isEmpty()){
+    		 if(this.mob.isEmpty()) {
+    		 
+     		throw new Exception("Atleast enter either mobile number or telephone");
+    		 }
+    		 else
+    			 return true;
+     	 }
+    	 else
+    		 return true;
+    	 
+    	 
+    	 
      }
 	public String getFname() {
 		return fname;

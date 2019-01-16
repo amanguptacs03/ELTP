@@ -1,7 +1,9 @@
 package com.assign.second;
 
+import java.util.Date;
+
 public class Array {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 //		int arr[];
 //		arr = new int[3];
 //		arr[0] = 10;
@@ -72,9 +74,9 @@ public class Array {
 //		c.setMob("7886545");
 
 		
-		
+Contact obj =new Contact("aman","","gupta","male","x","y","z","464993","mp","india","","","am@g.co","sgg",new Date(),new Date());
 
-		
+		System.out.println(obj.getTel());
 		
 		
 		
