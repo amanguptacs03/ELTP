@@ -77,6 +77,7 @@ public class Array {
 Contact obj =new Contact("aman","","gupta","male","x","y","z","464993","mp","india","","","am@g.co","sgg",new Date(),new Date());
 
 		System.out.println(obj.getTel());
+
 		
 		
 		

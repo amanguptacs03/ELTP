@@ -9,7 +9,7 @@ public class Contact {
 	
 	public Contact()
 	{
-		
+		tel="";
 	}
      public Contact(String fname, String mname, String lname, String gender, String address, String area, String city,
 			String pin, String state, String country, String tel, String mob, String email, String website, Date dob,
@@ -49,17 +49,13 @@ public class Contact {
     		 throw new Exception("invalid email");
     	 }
     	 
-    	 if(this.tel.isEmpty()){
-    		 if(this.mob.isEmpty()) {
+    	 if(tel.isEmpty() && mob.isEmpty()){
     		 
-     		throw new Exception("Atleast enter either mobile number or telephone");
-    		 }
+      		throw new Exception("Atleast enter either mobile number or telephone");
+     	 }
     		 else
     			 return true;
-     	 }
-    	 else
-    		 return true;
-    	 
+     
     	 
     	 
      }
