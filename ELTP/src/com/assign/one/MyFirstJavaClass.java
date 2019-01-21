@@ -51,5 +51,11 @@ public class MyFirstJavaClass {
 //		for (int y : vals) {
 //			System.out.println(y);
 //		}
+		
+		Integer val;
+		val=100;//auto boxing
+		int result,n=10;
+		result=val*n;//auto unboxing
+		//internall val.intValue();--->methood of Number class(A super class of int,float,byte,short)
 		}
 }
